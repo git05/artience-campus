@@ -1,0 +1,42 @@
+
+/* footer.css */
+
+.artience-footer {
+    width: 350px;
+    margin: 0 auto;
+    font-size: 12px;
+    padding: var(--padding) 0;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.artience-footer_list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-wrap: wrap;
+    color: var(--dark_blue);
+}
+
+.artience-footer_item {
+    margin-right: var(--margin);
+    line-height: 1.125rem;
+}
+
+.artience-footer_copyright {
+    color: var(--gray_9);
+}
+
+@media all and (min-width: 876px) {
+    .artience-footer {
+        width: 100%;
+        text-align: left;
+    }
+
+    .artience-footer_list {
+        justify-content: flex-start;
+    }
+}

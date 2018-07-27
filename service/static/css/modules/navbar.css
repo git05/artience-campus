@@ -1,0 +1,72 @@
+.artience-navbar {
+    background: white;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    border-bottom: 1px solid var(--gray_ef);
+    z-index: 1000;
+}
+
+.artience-navbar_content {
+    max-width: var(--max-width);
+    margin: 0 auto;
+    padding: 1.3rem 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    transition: all 0.3s ease;
+}
+
+.artience-navbar_logo {
+    font-size: 2rem;
+}
+
+.artience-navbar_separator {
+    width: 1px;
+    align-self: stretch;
+    background: var(--gray_9);
+    margin: 0 var(--margin);
+}
+
+.artience-navbar_letras {
+    width: 110px;
+    opacity: 1;
+    transition: all 0.3s ease;
+}
+
+.artience-navbar_scroll .artience-navbar_content {
+    padding: 0.65rem 20px;
+}
+
+.artience-navbar_scroll .artience-navbar_letras, .artience-navbar_scroll .artience-navbar_separator {
+    opacity: 0;
+}
+
+.artience-navbar_input {
+    background: var(--background);
+    border: 1px solid var(--gray_ef);
+    border-radius: 3px;
+    padding: 5px 10px;
+    font-size: 14px;
+    text-align: center;
+    outline: 0;
+    width: 215px;
+}
+
+.artience-navbar_input:focus {
+    text-align: left;
+    background: white;
+}
+
+.artience-navbar_section {
+    display: flex;
+    align-items: center;
+    color: inherit;
+}
+
+.artience-navbar_icon {
+    color: inherit;
+    margin-left: 30px;
+    font-size: 1.5rem;
+}

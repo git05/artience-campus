@@ -1,0 +1,87 @@
+.artience-card {
+    background: white;
+    border: 1px solid var(--border);
+    margin-bottom: 60px;
+}
+
+.artience-card .artience-card-header {
+    display: flex;
+    padding: var(--padding);
+    align-items: center;
+}
+
+.artience-card .artience-card-profilepicture {
+    width: 30px;
+    height: 30px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-right: var(--margin);
+}
+
+.artience-card .artience-card-username {
+    margin: 0;
+    font-size: 0.8rem;
+    font-weight: 600;
+}
+
+.artience-card .artience-card-picture-container {
+
+}
+
+.artience-card .artience-card-picture {
+    width: 100%;
+}
+
+.artience-card .artience-card-icons {
+    padding: var(--padding);
+    font-size: 1.5rem;
+}
+
+.artience-card .fa{
+    margin-right: var(--margin);
+}
+
+.artience-card .artience-card-likes {
+    font-size: 0.8rem;
+    font-weight: 600;
+    padding: 0 var(--padding);
+    margin: 0;
+}
+
+.artience-card .artience-card-description {
+    padding: 0 var(--padding);
+    font-size: 0.8rem;
+}
+
+.artience-card .artience-card-comments {
+    padding: 0 var(--padding);
+}
+
+.artience-card .artience-card-comment {
+    font-size: 0.8rem;
+}
+
+.artience-card .artience-card-comment-user {
+    margin: 0;
+    font-weight: 600;
+}
+
+.artience-card .artience-card-time {
+    color: var(--gray_9);
+    font-size: 0.7rem;
+    padding-bottom: var(--padding);
+    border-bottom: 1px solid var(--border);
+    display: block;
+    margin: 0 var(--margin);
+}
+
+.artience-card .artience-card-form {
+
+}
+
+.artience-card .artience-card-input {
+    border: 0;
+    outline: 0;
+    padding: var(--padding);
+    font-size: 0.8rem;
+}

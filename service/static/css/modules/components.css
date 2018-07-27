@@ -1,0 +1,27 @@
+
+/* components.css */
+
+.artience-separator {
+    display: flex;
+    align-items: center;
+    color: var(--gray_9);
+}
+
+.artience-separator::before {
+    margin-right: var(--margin);
+}
+
+.artience-separator::after {
+    margin-left: var(--margin);
+}
+
+.artience-separator::before, .artience-separator::after {
+    content: '';
+    display: block;
+    border-bottom: 1px solid var(--gray_9);
+    flex-grow: 1;
+}
+
+.bold {
+    font-weight: bold;
+}

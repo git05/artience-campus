@@ -1,0 +1,25 @@
+{% extends "base.html" %}
+
+{% load static %}
+
+{% block maincontent %}
+	<section class="artience-index_content">
+		<img src="{% static 'images/main.png' %}" alt="Artience Campus" class="artience-index_phones">
+		<section class="artience-index_data">
+			<form method="POST" action="{% url 'login' %}" class="artience-index_box artience-form" autocomplete="off">
+				{% csrf_token %}
+			<!--	<img src="{% static 'images/instagram_logo_letras.png' %}" alt="Instagram logo" class="artience-form_image"> -->
+        {% if form.errors %}
+          <p class="login_noti"> ID 및 비밀번호가 일치하지 않습니다.<br> 다시 시도해주세요. </p>
+        {% endif %}
+        <input class="artience-form_input" name="username" type="text" placeholder="ID를 입력하세요" required>
+				<input class="artience-form_input" name="password" type="password" placeholder="비밀번호를 입력하세요" required>
+				<button class="artience-form_button">Login</button>
+			</form>
+			<section class="artience-index_box">
+				<p class="artience-index_login">ID 가 없으신가요? <a href="{% url 'index' %}"> 회원 가입 하기</a></p>
+			</section>
+		</section>
+	</section>
+	{% include "modules/footer.html" %}
+{% endblock %}

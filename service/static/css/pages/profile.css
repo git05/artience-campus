@@ -1,0 +1,127 @@
+.artience-profile {
+}
+
+.artience-profile_header {
+    display: flex;
+    margin-bottom: 44px;
+}
+
+.artience-profile_picture_container {
+    margin-right: 20px;
+}
+
+.artience-profile_picture {
+    width: 77px;
+    height: 77px;
+    border-radius: 50%;
+    margin: 0 auto;
+    display: block;
+}
+
+.artience-profile_data {
+}
+
+.artience-profile_username {
+    font-size: 2rem;
+    font-weight: 200;
+    margin-right: 20px;
+}
+
+.artience-profile_edit {
+    padding: 0 24px;
+    line-height: 26px;
+    font-size: 0.9rem;
+    background: var(--background);
+    border: 1px solid var(--gray_db);
+    border-radius: 3px;
+    font-weight: 600;
+    margin-right: 10px;
+    outline: 0;
+}
+
+.artience-profile_edit:active {
+    color: var(--gray_db);
+}
+
+.artience-profile_counters {
+    margin: 16px 40px 16px 0;
+    font-weight: 400;
+}
+
+.artience-profile_number {
+    font-weight: 600;
+}
+
+.artience-profile_cog {
+    color: inherit;
+}
+
+.artience-profile_data_section {
+    display: flex;
+    align-items: center;
+}
+
+.artience-profile_description {
+    margin: 0;
+    font-weight: 600;
+}
+
+.artience-profile_gallery {
+    display: grid;
+    grid-gap: 0.2rem;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.artience-profile_photo {
+    position: relative;
+}
+
+.artience-profile_photo_image {
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+}
+
+.artience-profile_photo_content {
+    background: rgba(0, 0, 0, 0.6);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    opacity: 0;
+}
+
+.artience-profile_photo_content:hover {
+    opacity: 1;
+}
+
+.artience-profile_photo_icon {
+    padding: 10px;
+}
+
+.artience-profile_photo_icon .fa {
+    margin-right: 5px;
+}
+
+@media all and (min-width: 876px) {
+    .artience-profile_header {
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        grid-gap: 1.5rem;
+    }
+
+    .artience-profile_picture {
+        width: 152px;
+        height: 152px;
+    }
+
+    .artience-profile_gallery {
+        grid-gap: 1.5rem;
+    }
+}

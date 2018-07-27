@@ -1,0 +1,61 @@
+.artience-home {
+    display: grid;
+    grid-template-columns: 1fr 293px;
+    grid-gap: var(--gutter);
+}
+
+.artience-home .artience-cards {
+
+}
+
+.artience-home .artience-users {
+
+}
+
+.artience-home .artience-users-header {
+    display: flex;
+    padding: var(--padding);
+    align-items: center;
+    border-bottom: 1px solid var(--border);
+}
+
+.artience-home .artience-users-profilepicture {
+    width: 30px;
+    height: 30px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-right: var(--margin);
+}
+
+.artience-home .artience-users-username {
+    margin: 0;
+    font-size: 0.8rem;
+    font-weight: 600;
+}
+
+.artience-home .artience-users-titles {
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.8rem;
+    padding: var(--padding) 0;
+}
+
+.artience-home .artience-users-users {
+    overflow-y: auto;
+    height: 306px;
+}
+
+.artience-home .artience-users-user {
+    display: flex;
+    align-items: center;
+    margin-bottom: var(--margin);
+    color: inherit;
+}
+
+.artience-home .artience-users-user-profilepicture {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-right: var(--margin);
+}

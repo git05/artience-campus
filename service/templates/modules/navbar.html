@@ -1,0 +1,20 @@
+{% load static %}
+
+<nav class="artience-navbar" id="artience-navbar">
+    <section class="artience-navbar_content">
+        <a href="{% url 'home' %}" class="artience-navbar_section">
+          <span class="fa fa-university artience-navbar_icon"></span>
+            <span class="artience-navbar_separator"></span>
+            <img class="artience-navbar_letras" src="{% static 'images/artience_logo.png' %}" alt="Instagram">
+        </a>
+        <form method="POST" action="{% url 'search' %}" autocomplete="off">
+            {% csrf_token %}
+            <input type="search" placeholder="검색어를 입력하세요" name="search_username" class="artience-navbar_input">
+        </form>
+        <section class="artience-navbar_section">
+            <a href="{% url 'upload' %}" class="fa fa-book artience-navbar_icon"></a>
+            <a href="{% url 'profile'  username  %}" class="fa fa-user-o artience-navbar_icon"></a>
+            <a href="{% url 'logout' %}" class="fa fa-sign-out artience-navbar_icon"></a>
+        </section>
+    </section>
+</nav>

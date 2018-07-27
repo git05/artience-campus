@@ -1,0 +1,32 @@
+/* base.css */
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+.maincontent { font-family: 'Nanum Square'; }
+.artience-navbar_content {font-family: 'Nanum Square'; } 
+
+a {
+    text-decoration: none;
+    color: var(--blue);
+}
+
+body {
+    font-family: var(--main_font);
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background: var(--background);
+}
+
+.maincontent {
+    max-width: var(--max-width);
+    margin: 0 auto;
+    padding: 60px 20px 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.footer { font-family: 'Arial'; }

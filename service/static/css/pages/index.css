@@ -1,0 +1,36 @@
+
+/* index.css */
+
+.artience-index_content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: var(--padding) 0;
+    margin: auto;
+}
+
+.artience-index_phones {
+    display: none;
+}
+
+@media all and (min-width: 876px) {
+    .artience-index_phones {
+        display: block;
+    }
+}
+
+.artience-index_data {
+}
+
+.artience-index_box {
+    background: white;
+    border: 1px solid var(--border);
+    width: 350px;
+    margin-bottom: var(--margin);
+    padding: var(--padding) 40px;
+}
+
+.artience-index_login {
+    text-align: center;
+    font-size: 14px;
+}

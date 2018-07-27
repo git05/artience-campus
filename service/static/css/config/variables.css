@@ -1,0 +1,22 @@
+
+/* variables.css */
+
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,500');
+
+:root {
+    --gutter: 16px;
+    --padding: 16px;
+    --margin: 16px;
+    --main_font: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    --max-width: 978px;
+
+    --background: #fafafa;
+    --border: #e6e6e6;
+
+    --blue: #3897f0;
+    --dark_blue: #003569;
+    --gray_9: #999;
+    --gray_fa: #fafafa;
+    --gray_ef: #efefef;
+    --gray_db: #dbdbdb;
+}
