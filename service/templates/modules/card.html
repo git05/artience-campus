@@ -1,0 +1,37 @@
+{% load static %}
+<section class="artience-card">
+    <section class="artience-card-header">
+        <img src="{% static '' %}{{ post.user.photo|default_if_none:'images/default.png' }}" alt="user picture" class="artience-card-profilepicture">
+        <p class="artience-card-username">{{ post.user.user_django.username }}</p>
+    </section>
+    <section class="artience-card-picture-container">
+            <img src="{% static '' %}{{ post.photo }}" alt="picture" class="artience-card-picture">
+    </section>
+  <!--  <section class="artience-card-icons">
+        {% if post.id in likes %}
+            <span class="fa fa-heart artience-do-like" postid="{{ post.id }}" target="#post-likes-text-{{ post.id }}"></span>
+        {% else %}
+            <span class="fa fa-heart-o artience-do-like" postid="{{ post.id }}" target="#post-likes-text-{{ post.id }}"></span>
+        {% endif %}
+
+        <span class="fa fa-comment-o"></span>
+    </section>
+ <p class="artience-card-likes">A <span id="post-likes-text-{{ post.id }}">{{ post.like_set.count }}</span> personas les gusta esto</p>  -->
+<p class="artience-card-description">
+        <span class="artience-card-username">{{ post.user.user_django.username }}</span>
+        {{ post.description }}
+    </p>
+  <!--  <section class="artience-card-comments">
+        {% for comment in post.comment_set.all %}
+     <p class="artience-card-comment">
+            <span class="artience-card-comment-user">{{ comment.user.user_django.username }}</span>
+            {{ comment.content }}
+        </p>
+        {% endfor %}
+    </section>
+    <span class="artience-card-time">{{ post }}</span>
+
+        {% csrf_token %}
+        <input name='comment' class="artience-card-input" placeholder="Agrega un comentario..."/>
+    </form>-->
+</section>

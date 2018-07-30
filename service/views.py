@@ -31,10 +31,13 @@ def home(request):
     if not request.user.is_authenticated:
         return redirect('index')
     my_user = request.user.myuser
+    complete_post =my_user.post_set.all()
+    complete_post = complete_post.order_by('date')
 
     context = dict(
         current_user = my_user,
-        username = request.user.username
+        username = request.user.username,
+        complete_post=complete_post
     )
 
     return render(request,"home.html",context)

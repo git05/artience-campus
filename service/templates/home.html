@@ -4,33 +4,34 @@
 
 {% block maincontent %}
 	{% include "modules/navbar.html" %}
-<!--
-    <section class="insta-home">
-        <section class="insta-cards">
+
+    <section class="artience-home">
+			<h4 class="list"><p> 강의 목록 </p></h4>
+        <section class="artience-cards">
             {% for post in complete_post %}
                 {% include "modules/card.html" %}
             {% endfor %}
         </section>
-        <section class="insta-users">
-            <section class="insta-users-header">
-                <img src="{% static '' %}{{ current_user.photo|default_if_none:'images/default.png' }}" alt="user picture" class="insta-users-profilepicture">
-                <p class="insta-users-username">juanmsl</p>
+    <!--    <section class="artience-users">
+            <section class="artience-users-header">
+                <img src="{% static '' %}{{ current_user.photo|default_if_none:'images/default.png' }}" alt="user picture" class="artience-users-profilepicture">
+                <p class="artience-users-username">juanmsl</p>
             </section>
-            <section class="insta-users-titles">
+            <section class="artience-users-titles">
                 <span>Usuarios</span>
                 <a herf="">Ver todos</a>
             </section>
-            <section class="insta-users-users">
+            <section class="artience-users-users">
                 {% for user in all_users %}
-                <a href="{% url 'profile' user.username %}" class="insta-users-user">
-                    <img src="{% static '' %}{{ user.myuser.photo|default_if_none:'images/default.png' }}" alt="picture" class="insta-users-user-profilepicture">
-                    <span class="insta-users-username">{{ user.username }}</span>
+                <a href="{% url 'profile' user.username %}" class="artience-users-user">
+                    <img src="{% static '' %}{{ user.myuser.photo|default_if_none:'images/default.png' }}" alt="picture" class="artience-users-user-profilepicture">
+                    <span class="artience-users-username">{{ user.username }}</span>
                 </a>
                 {% endfor %}
             </section>
-        </section>
+        </section> -->
     </section>
--->
+
 
 	{% include "modules/footer.html" %}
 {% endblock %}

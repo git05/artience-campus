@@ -2,14 +2,36 @@
     background: white;
     border: 1px solid var(--border);
     margin-bottom: 60px;
+    margin : 0 auto;
+    padding-left: 10px;
+    padding-right: 10px;
+    width : 100%;
+    vertical-align: middle;
+    text-align: center;
+
+
+}
+
+.artience-cards{
+
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 20px;
+  row-gap: 20px;
 }
 
 .artience-card .artience-card-header {
+
     display: flex;
     padding: var(--padding);
     align-items: center;
 }
 
+
+.artience-cards{
+  align:center;
+
+}
 .artience-card .artience-card-profilepicture {
     width: 30px;
     height: 30px;
@@ -28,8 +50,8 @@
 
 }
 
-.artience-card .artience-card-picture {
-    width: 100%;
+.artience-card .artience-card-picture  {
+    width : 100%;
 }
 
 .artience-card .artience-card-icons {

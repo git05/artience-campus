@@ -5,7 +5,7 @@
 }
 
 .maincontent { font-family: 'Nanum Square'; }
-.artience-navbar_content {font-family: 'Nanum Square'; } 
+.artience-navbar_content {font-family: 'Nanum Square'; }
 
 a {
     text-decoration: none;
@@ -23,6 +23,7 @@ body {
 .maincontent {
     max-width: var(--max-width);
     margin: 0 auto;
+    width: 1000px;
     padding: 60px 20px 0;
     display: flex;
     flex-direction: column;

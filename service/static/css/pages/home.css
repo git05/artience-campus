@@ -1,14 +1,21 @@
 .artience-home {
-    display: grid;
-    grid-template-columns: 1fr 293px;
-    grid-gap: var(--gutter);
+
+
 }
 
 .artience-home .artience-cards {
 
 }
 
-.artience-home .artience-users {
+.artience-home {
+
+  margin-top: 25px;
+
+}
+
+.list {
+  margin-left: 5px;
+
 
 }
 
