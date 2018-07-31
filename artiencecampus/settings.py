@@ -38,7 +38,9 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'django_extensions',
-    'service'
+    'service',
+    'django_summernote',
+    'board'
 ]
 
 MIDDLEWARE = [
@@ -127,3 +129,6 @@ STATIC_ROOT = os.path.join(BASE_DIR , 'service/static')
 
 LOGIN_REDIRECT_URL = "home"
 LOGOUT_REDIRECT_URL = 'index'
+
+MEDIA_URL='images/'
+SUMMERNOTE_CONFIG= {}

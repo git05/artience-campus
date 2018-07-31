@@ -11,5 +11,6 @@ urlpatterns= [
     path('upload/',views.upload,name="upload"),
     path('profile/<str:username>',views.profile,name="profile"),
     path('logout/',auth_views.LogoutView.as_view(),name="logout"),
-    path('loginuser/',views.login,name="validate")
+    path('loginuser/',views.login,name="validate"),
+
 ]
