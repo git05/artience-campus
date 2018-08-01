@@ -16,4 +16,7 @@ class Post(models.Model):
     description = models.CharField(null=True,max_length=200)
     date = models.DateTimeField(default=datetime.now())
     user = models.ForeignKey(MyUser, on_delete=models.CASCADE)
-    photo= models.CharField(max_length=200)
+    main_image= models.CharField(null=True,max_length=200)
+    teacher = models.CharField(null=True,max_length=200)
+    min = models.IntegerField(default=1)
+    lecture_date = models.DateTimeField(null=True)

@@ -131,4 +131,5 @@ LOGIN_REDIRECT_URL = "home"
 LOGOUT_REDIRECT_URL = 'index'
 
 MEDIA_URL='images/'
+MEDIA_ROOT = os.path.join(BASE_DIR , 'service/static/images')
 SUMMERNOTE_CONFIG= {}

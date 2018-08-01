@@ -3,15 +3,54 @@
 {% load static %}
 
 {% block maincontent %}
+  	{% include "modules/navbar.html" %}
 
 
-<form method="post" action="/">
+
+<section class ="artience-post">
+  <a class="post_title" ><h3 style="
+    margin-bottom: 15px;"> 새 강의 등록 </h3></a>
+<form method="post" action="{% url 'upload' %}" enctype="multipart/form-data">
     {% csrf_token %}
-    <input id="id_new_post_title" name="post_title_text" placeholder="Insert Title"/><br/>
+    <div class="form-group ">
+     <label for="input_title">강의 제목 </label>
+     <input type="text" class="form-control" id="input_title" name = "title" placeholder="강의 제목을 입력해주세요">
+    </div>
+    <div class="form-group form-inline">
+     <label for="input_name">강의자 : &nbsp;</label>
+     <input type="text" class="form-control" id="input_name" name = "teacher" placeholder="김영호">
+     <label for="input_name"> &nbsp; 최소 인원 : &nbsp;</label>
+     <input type="text" class="form-control" id="input_name" placeholder="10" name="min">
+     <label for="input_name"> &nbsp; 강의일 : &nbsp;</label>
+     <div class="input-group date">
+         <input type="text" class="form-control" name="startdate"><span class="input-group-addon"><i class="glyphicon glyphicon-calendar"></i></span>
+     </div>
+    </div>
+
+    <div class="form-group">
+      <label for="exampleInputFile">메인 이미지 업로드</label>
+      <input type="file" id="exampleInputFile" name="file">
+    </div>
+
+    <div class="form-group">
+      <label for="editor">강의 내용</label>
+      <br>
     {{ form|safe }}
-    <br/>
-    <button type="submit">등록</button>
+    </div>
+    <button type="submit" class="btn btn-default">등록</button>
+    <a href="{% url 'home' %}" class="btn btn-default" role="button">취소</a>
 </form>
+</section>
+<script type="text/javascript">
+$('.input-group.date').datetimepicker({
+  format: "YYYY-MM-DD HH:00"
+
+}
+
+);
+
+
+</script>
 
 {% include "modules/footer.html" %}
 {% endblock %}
