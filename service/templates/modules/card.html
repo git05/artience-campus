@@ -1,5 +1,7 @@
 {% load static %}
 <section class="artience-card" >
+
+
   <!--  <section class = "artience-card-picture"> -->
 
 <!--    <section class="artience-card-header">
@@ -7,7 +9,7 @@
         <p class="artience-card-username">{{ post.user.user_django.username }}</p>
     </section> -->
     <section class="artience-card-picture-container">
-            <img src="{% static '' %}{{ post.main_image }}" alt="picture" class="artience-card-picture">
+            <img src="{% static '' %}{{ post.main_image }}" alt="picture" class="artience-card-picture" style="width: 300px;height: 130px;">
     </section>
   <!--  <section class="artience-card-icons">
         {% if post.id in likes %}
@@ -23,11 +25,19 @@
       <!--  <span class="artience-card-username">{{ post.user.user_django.username }}</span>-->
 <blockquote class="blockquote card-title">
   <h5>{{ post.title }}</h5>
-  <footer class="blockquote-footer">{{post.description}}</footer>
+
+  <div class ="artience-teacher">강사 : {{ post.teacher }} 강사님</div>
+  <div class ="artience-date">강의 일자 : {{post.lecture_date}}</div>
+  <div class ="artience-min">최소인원 : {{post.min}}</div>
+  <div class="artience-descipriton">{% autoescape off %}{{ post.description|truncatechars:100|striptags }}{% endautoescape %}
+
+
+
+  </div>
 
 
 </blockquote>
-    </p>
+
   <!--  <section class="artience-card-comments">
         {% for comment in post.comment_set.all %}
      <p class="artience-card-comment">

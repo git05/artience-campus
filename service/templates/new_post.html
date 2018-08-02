@@ -14,22 +14,22 @@
     {% csrf_token %}
     <div class="form-group ">
      <label for="input_title">강의 제목 </label>
-     <input type="text" class="form-control" id="input_title" name = "title" placeholder="강의 제목을 입력해주세요">
+     <input type="text" class="form-control" id="input_title" name = "title" placeholder="강의 제목을 입력해주세요" required>
     </div>
     <div class="form-group form-inline">
      <label for="input_name">강의자 : &nbsp;</label>
-     <input type="text" class="form-control" id="input_name" name = "teacher" placeholder="김영호">
-     <label for="input_name"> &nbsp; 최소 인원 : &nbsp;</label>
+     <input type="text" class="form-control" id="input_name" name = "teacher" placeholder="김영호" required>
+     <label for="input_name" required> &nbsp; 최소 인원 : &nbsp;</label>
      <input type="text" class="form-control" id="input_name" placeholder="10" name="min">
-     <label for="input_name"> &nbsp; 강의일 : &nbsp;</label>
-     <div class="input-group date">
-         <input type="text" class="form-control" name="startdate"><span class="input-group-addon"><i class="glyphicon glyphicon-calendar"></i></span>
+     <label for="input_name" required> &nbsp; 강의일 : &nbsp;</label>
+     <div class="input-group date" >
+         <input type="text" class="form-control" name="startdate" required><span class="input-group-addon"><i class="glyphicon glyphicon-calendar"></i></span>
      </div>
     </div>
 
     <div class="form-group">
       <label for="exampleInputFile">메인 이미지 업로드</label>
-      <input type="file" id="exampleInputFile" name="file">
+      <input type="file" id="exampleInputFile" name="file" required>
     </div>
 
     <div class="form-group">

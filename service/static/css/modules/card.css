@@ -116,3 +116,16 @@ padding-left: 10px;
     padding: var(--padding);
     font-size: 0.8rem;
 }
+
+
+.artience-teacher {
+  font-size: 80%;
+}
+
+.artience-date {
+  font-size: 80%;
+}
+
+ .artience-min {
+  font-size: 80%;
+ }

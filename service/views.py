@@ -4,6 +4,8 @@ from django.http import JsonResponse
 from django.views.decorators.csrf import csrf_exempt
 from django.core.files.storage import FileSystemStorage
 from django.contrib.auth.models import User
+import re
+
 
 def index(request):
     if request.user.is_authenticated:
@@ -36,7 +38,7 @@ def home(request):
     context = dict(
         current_user = my_user,
         username = request.user.username,
-        complete_post=complete_post
+        complete_post=complete_post,
     )
 
     return render(request,"home.html",context)
