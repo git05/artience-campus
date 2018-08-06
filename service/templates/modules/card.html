@@ -9,8 +9,10 @@
         <p class="artience-card-username">{{ post.user.user_django.username }}</p>
     </section> -->
     <section class="artience-card-picture-container">
+            <a href="{% url 'lecture' post.id %}">
             <img src="{% static '' %}{{ post.main_image }}" alt="picture" class="artience-card-picture" style="width: 300px;height: 130px;">
-    </section>
+    </a>
+  </section>
   <!--  <section class="artience-card-icons">
         {% if post.id in likes %}
             <span class="fa fa-heart artience-do-like" postid="{{ post.id }}" target="#post-likes-text-{{ post.id }}"></span>
@@ -21,8 +23,10 @@
         <span class="fa fa-comment-o"></span>
     </section>
  <p class="artience-card-likes">A <span id="post-likes-text-{{ post.id }}">{{ post.like_set.count }}</span> personas les gusta esto</p>  -->
+
 <p class="artience-card-titles">
       <!--  <span class="artience-card-username">{{ post.user.user_django.username }}</span>-->
+<a href="{% url 'lecture' post.id %}">
 <blockquote class="blockquote card-title">
   <h5>{{ post.title }}</h5>
 
@@ -31,13 +35,11 @@
   <div class ="artience-min">최소인원 : {{post.min}}</div>
   <div class="artience-descipriton">{% autoescape off %}{{ post.description|truncatechars:100|striptags }}{% endautoescape %}
 
-
-
   </div>
 
 
 </blockquote>
-
+</a>
   <!--  <section class="artience-card-comments">
         {% for comment in post.comment_set.all %}
      <p class="artience-card-comment">

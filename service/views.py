@@ -38,7 +38,7 @@ def home(request):
     context = dict(
         current_user = my_user,
         username = request.user.username,
-        complete_post=complete_post,
+        complete_post=complete_post
     )
 
     return render(request,"home.html",context)
@@ -85,6 +85,56 @@ def upload_lecture(request):
         post = Post.objects.create(title = title,user = my_user,teacher = teacher,min = min ,lecture_date=lecture_date,main_image=path_lecture ,description= fields )
         return redirect('home')
 
+def lecture(request,id) :
+    if not request.user.is_authenticated:
+        return redirect('index')
+    my_user = request.user.myuser
+    post = Post.objects.filter(id=id).last()
+    applications = Application.objects.filter(user=my_user)
+    applications = [application.post.id for application in applications]
+
+
+    context = dict(
+        username=request.user.username,
+        post_id = post.id,
+        post_image = post.main_image,
+        post_title = post.title ,
+        post_description = post.description,
+        post_lecturedate = post.lecture_date,
+        post_min = post.min ,
+        post_teacher = post.teacher,
+        applications = applications
+    )
+
+    return render(request,"lecture.html",context)
+
+
+@csrf_exempt
+def apply(request):
+    post_id =request.POST['post_id']
+    post = Post.objects.get(id=post_id)
+    my_user = request.user.myuser
+    data = dict(
+        user = my_user,
+        post = post
+    )
+    like = Application.objects.create(**data)
+    response = dict(message="OK" , likes_count=post.application_set.count())
+    return JsonResponse(response)
+
+@csrf_exempt
+def unapply(request):
+    post_id =request.POST['post_id']
+    post = Post.objects.get(id=post_id)
+    my_user = request.user.myuser
+    data = dict(
+        user = my_user,
+        post = post
+    )
+    like = Application.objects.get(**data)
+    like.delete()
+    response = dict(message="OK" , likes_count=post.application_set.count())
+    return JsonResponse(response)
 
 
 # Create your views here.
