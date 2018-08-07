@@ -20,6 +20,8 @@ doapply.on('click', function() {
         url: url,
         success: function(e) {
             console.log(e);
+            item.toggleClass("btn-primary");
+            item.toggleClass("btn-success");
             item.toggleClass("apply");
             item.toggleClass("notapply");
             if (url=="/apply/"){item.text("강의 취소")} else {item.text("강의 신청")}

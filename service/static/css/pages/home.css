@@ -1,74 +1,36 @@
-.artience-home {
+
+/*!
+ * Start Bootstrap - 3 Col Portfolio (https://startbootstrap.com/template-overviews/3-col-portfolio)
+ * Copyright 2013-2018 Start Bootstrap
+ * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-3-col-portfolio/blob/master/LICENSE)
+ */
 
 
+body {
+  padding-top: 54px;
 }
 
-.artience-home .artience-cards {
-
-
-
+@media (min-width: 992px) {
+  body {
+    padding-top: 56px;
+  }
 }
 
-.artience-home {
-
-  margin-top: 40px;
-
+.portfolio-item {
+  margin-bottom: 30px;
 }
 
-.list {
-  margin-left: 5px;
-
-
+.pagination {
+  margin-bottom: 30px;
 }
 
-.artience-home .artience-users-header {
-    display: flex;
-    padding: var(--padding);
-    align-items: center;
-    border-bottom: 1px solid var(--border);
+* {  font-family: 'Nanum Square';}
+
+
+.title {
+    margin-top: 2rem!important;
 }
 
-.artience-home .artience-users-profilepicture {
-    width: 30px;
-    height: 30px;
-    object-fit: cover;
-    border-radius: 50%;
-    margin-right: var(--margin);
-}
-
-.artience-home .artience-users-username {
-    margin: 0;
-    font-size: 0.8rem;
-    font-weight: 600;
-}
-
-.artience-home .artience-users-titles {
-    display: flex;
-    justify-content: space-between;
-    font-size: 0.8rem;
-    padding: var(--padding) 0;
-}
-
-.artience-home .artience-users-users {
-    overflow-y: auto;
-    height: 306px;
-}
-
-.artience-home .artience-users-user {
-    display: flex;
-    align-items: center;
-    margin-bottom: var(--margin);
-    color: inherit;
-}
-
-.artience-home .artience-users-user-profilepicture {
-    width: 50px;
-    height: 50px;
-    object-fit: cover;
-    border-radius: 50%;
-    margin-right: var(--margin);
-}
-.artience-descipriton{
-    font-size: 80%;
-    color: #6c757d;
+.card-text:last-child {
+    font-size: 13px;
 }

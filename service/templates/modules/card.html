@@ -1,5 +1,4 @@
 {% load static %}
-<section class="artience-card" >
 
 
   <!--  <section class = "artience-card-picture"> -->
@@ -8,38 +7,29 @@
         <img src="{% static '' %}{{ post.user.photo|default_if_none:'images/default.png' }}" alt="user picture" class="artience-card-profilepicture">
         <p class="artience-card-username">{{ post.user.user_django.username }}</p>
     </section> -->
-    <section class="artience-card-picture-container">
+  <div class="col-lg-4 col-sm-6 portfolio-item">
+    <div class="card h-100">
             <a href="{% url 'lecture' post.id %}">
-            <img src="{% static '' %}{{ post.main_image }}" alt="picture" class="artience-card-picture" style="width: 300px;height: 130px;">
+            <img src="{% static '' %}{{ post.main_image }}" alt="picture" class="card-img-top" >
     </a>
-  </section>
-  <!--  <section class="artience-card-icons">
-        {% if post.id in likes %}
-            <span class="fa fa-heart artience-do-like" postid="{{ post.id }}" target="#post-likes-text-{{ post.id }}"></span>
-        {% else %}
-            <span class="fa fa-heart-o artience-do-like" postid="{{ post.id }}" target="#post-likes-text-{{ post.id }}"></span>
-        {% endif %}
-
-        <span class="fa fa-comment-o"></span>
-    </section>
- <p class="artience-card-likes">A <span id="post-likes-text-{{ post.id }}">{{ post.like_set.count }}</span> personas les gusta esto</p>  -->
-
-<p class="artience-card-titles">
+            <div class="card-body">
+            <h5 class="card-title">
       <!--  <span class="artience-card-username">{{ post.user.user_django.username }}</span>-->
 <a href="{% url 'lecture' post.id %}">
-<blockquote class="blockquote card-title">
-  <h5>{{ post.title }}</h5>
-
+  {{ post.title }} </a>
+</h5>
   <div class ="artience-teacher">강사 : {{ post.teacher }} 강사님</div>
   <div class ="artience-date">강의 일자 : {{post.lecture_date}}</div>
   <div class ="artience-min">최소인원 : {{post.min}}</div>
-  <div class="artience-descipriton">{% autoescape off %}{{ post.description|truncatechars:100|striptags }}{% endautoescape %}
+  <p class="card-text">{% autoescape off %}{{ post.description|truncatechars:100|striptags }}{% endautoescape %}</p>
 
   </div>
+</div>
+</div>
 
 
-</blockquote>
-</a>
+
+
   <!--  <section class="artience-card-comments">
         {% for comment in post.comment_set.all %}
      <p class="artience-card-comment">

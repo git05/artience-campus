@@ -4,6 +4,8 @@
 
 {% block maincontent %}
     {% include "modules/navbar.html" %}
+
+<div class="container">
     <main class="mt-5 pt-4">
         <div class="container dark-grey-text mt-5">
 
@@ -11,9 +13,9 @@
           <div class="row wow fadeIn animated" style="visibility: visible; animation-name: fadeIn;">
 
             <!--Grid column-->
-            <div class="col-md-4 mb-4">
+            <div class="col-md-6 mb-4 text-center">
 
-              <img src="{% static '' %}{{ post_image }}" class="img-fluid" alt="">
+              <img src="{% static '' %}{{ post_image }}" class="img-responsive tocenter" alt="">
 
             </div>
             <!--Grid column-->
@@ -41,11 +43,10 @@
                   <!-- Default input -->
 
                   {% if post_id in applications %}
-                  <a class="btn btn-default notapply applyevent" role="button" postid={{post_id}}>강의 취소
-
+                    <button type="button" class="btn btn-success notapply applyevent" postid={{post_id}} >강의 취소</button>
                   </a>
                   {% else %}
-                  <a class="btn btn-default apply applyevent" role="button" postid={{post_id}}>강의 신청
+                    <button type="button" class="btn btn-primary apply applyevent" postid={{post_id}} >강의 신청</button>
 
                   </a>
                   {% endif %}
@@ -64,7 +65,7 @@
           <div class="row d-flex justify-content-center wow fadeIn animated" style="visibility: visible; animation-name: fadeIn;">
 
             <!--Grid column-->
-            <div class="col-md-6 text-center">
+            <div class="col-md-12 text-center">
 
               <h4 class="my-4 h4"> 강의 소개 </h4>
 
@@ -88,6 +89,6 @@
 
         </div>
       </main>
-
+<div>
 	{% include "modules/footer.html" %}
 {% endblock %}

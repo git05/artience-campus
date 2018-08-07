@@ -3,18 +3,24 @@
 {% load static %}
 
 {% block maincontent %}
+<link rel="stylesheet" href="{% static 'css/pages/login.css' %}" media="all"/>
 
+<script>
+		addEventListener("load", function () {
+				setTimeout(hideURLbar, 0);
+		}, false);
 
-
-
-
-<section class="artience-index_content">
+		function hideURLbar() {
+				window.scrollTo(0, 1);
+		}
+</script>
+<!--<section class="artience-index_content">
   <img src="{% static 'images/main.png' %}" alt="Artience phones" class="Artience-index_phones">
   <section class="artience-index_data">
     <form method="POST" action="{% url 'register' %}" class="artience-index_box artience-form" autocomplete="off">
       {% csrf_token %}
     <!--  <img src="{% static 'images/artience_logo.png' %}" alt="Artience logo" class="artience-form_image"> -->
-        {% if form.errors %}
+   <!--{% if form.errors %}
           <p class="login_noti"> ID가 존재 합니다. <br> 다른 아이디로 시도해 주세요. </p>
         {% endif %}
 
@@ -31,7 +37,82 @@
       <p class="artience-index_login">ID가 있으신가요?<a href="{% url 'login' %}"> 로그인</a></p>
     </section>
   </section>
-</section>
+</section>-->
+
+<!--<div class = "container-fluid row" >
+  <div class ="col-lg-10 col-md-10 col-sm-10 col-xs-10" style="float; none; margin: 0 auto;">
+      <img src="{% static 'images/main.png' %}" alt="Artience phones" class="Artience-index_phones img-responsive">
+
+  <div class ="row" style="float: none; margin: 0 auto;">
+  <div class ="col-sm-4 col-xs-10">
+    <input class="artience-form_input" name="email" type="email" placeholder="E-Mail 을 입력하세요" required>
+  </div>
+    </div>
+  <div class ="row" style="float: none; margin: 0 auto;">
+  <div class ="col-sm-4">
+<input class="artience-form_input" name="name" type="text" placeholder="이름을 입력하세요" required>
+  </div>
+    </div>
+  <div class ="row">
+  <div class ="col-sm-4">
+        <input class="artience-form_input" name="username" type="text" placeholder="ID를 입력하세요" required>
+  </div>
+</div>
+  <div class ="row">
+  <div class ="col-sm-4">
+        <input class="artience-form_input" name="password" type="password" placeholder="비밀번호를 입력하세요" required>
+  </div>
+</div>
+
+
+</div>
+</div>
+-=->
+<body>
+	<!-- main -->
+	<div class="main-w3layouts wrapper">
+		<h1 style="color:white">Artience Campus SignUp</h1>
+		<div class="main-agileinfo">
+			<div class="agileits-top">
+				<form method="POST" action="{% url 'register' %}" autocomplete="off">
+		      {% csrf_token %}
+		 			{% if form.errors %}
+		          <p class="login_noti"> ID가 존재 합니다. <br> 다른 아이디로 시도해 주세요. </p>
+		        {% endif %}
+					<input class="artience-form_input" name="email" type="email" placeholder="E-Mail 을 입력하세요" required>
+					<input class="artience-form_input" name="name" type="text" placeholder="이름을 입력하세요" required>
+					<input class="artience-form_input" name="username" type="text" placeholder="ID를 입력하세요" required>
+		      <input class="artience-form_input" name="password" type="password" placeholder="비밀번호를 입력하세요" required>
+					<div class="wthree-text">
+						<label class="anim">
+
+							<span><input type="checkbox" class="checkbox" required="">본 약관 및 개인 정보 보호 정책에 동의 합니다.</span>
+						</label>
+						<div class="clear"> </div>
+					</div>
+					<input type="submit" value="회원가입">
+				</form>
+				<p>계정이 있으신가요? <a href="{% url 'login' %}"> 로그인 하세요!</a></p>
+			</div>
+		</div>
+		<!-- copyright -->
+		<!-- //copyright -->
+		<ul class="w3lsg-bubbles">
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+		</ul>
+	</div>
+	<!-- //main -->
+
+
 
   {% include "modules/footer.html" %}
 {% endblock %}

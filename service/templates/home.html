@@ -4,14 +4,16 @@
 
 {% block maincontent %}
 	{% include "modules/navbar.html" %}
-
-    <section class="artience-home">
-			<h4 class="list"><p> 강의 목록 </p></h4>
-        <section class="artience-cards">
+<div class="container">
+	<div class="title">
+	<h4 class="my-4">강의 목록
+	</h4>
+ </title>
+            <div class="row">
             {% for post in complete_post %}
                 {% include "modules/card.html" %}
             {% endfor %}
-        </section>
+
     <!--    <section class="artience-users">
             <section class="artience-users-header">
                 <img src="{% static '' %}{{ current_user.photo|default_if_none:'images/default.png' }}" alt="user picture" class="artience-users-profilepicture">
@@ -30,8 +32,9 @@
                 {% endfor %}
             </section>
         </section> -->
-    </section>
 
+			</div>
+</div>
 
 	{% include "modules/footer.html" %}
 {% endblock %}

@@ -3,12 +3,14 @@
 {% load static %}
 
 {% block maincontent %}
-	<section class="artience-index_content">
+<link rel="stylesheet" href="{% static 'css/pages/login.css' %}" media="all"/>
+
+	<!--<section class="artience-index_content col-xs-8 col-sm-6 col-md-4 col-lg-3" >
 		<img src="{% static 'images/main.png' %}" alt="Artience Campus" class="artience-index_phones">
 		<section class="artience-index_data">
 			<form method="POST" action="{% url 'login' %}" class="artience-index_box artience-form" autocomplete="off">
 				{% csrf_token %}
-			<!--	<img src="{% static 'images/instagram_logo_letras.png' %}" alt="Instagram logo" class="artience-form_image"> -->
+
         {% if form.errors %}
           <p class="login_noti"> ID 및 비밀번호가 일치하지 않습니다.<br> 다시 시도해주세요. </p>
         {% endif %}
@@ -20,6 +22,46 @@
 				<p class="artience-index_login">ID 가 없으신가요? <a href="{% url 'index' %}"> 회원 가입 하기</a></p>
 			</section>
 		</section>
-	</section>
+	</section>-->
+
+	<div class="main-w3layouts wrapper">
+		<h1 style="color:white">Artience Campus Login</h1>
+		<div class="main-agileinfo">
+			<div class="agileits-top">
+				<form method="POST" action="{% url 'login' %}" autocomplete="off">
+		      {% csrf_token %}
+		 			{% if form.errors %}
+		          <p class="login_noti"> 패스워드 혹은 아이디가 틀렸습니다.  <br> 다시시도해주세요  </p>
+		        {% endif %}
+					<input class="artience-form_input" name="username" type="text" placeholder="ID를 입력하세요" required>
+		      <input class="artience-form_input" name="password" type="password" placeholder="비밀번호를 입력하세요" required>
+					<div class="wthree-text">
+						<div class="clear"> </div>
+					</div>
+					<input type="submit" value="로그인">
+				</form>
+				<p>ID 가 없으신가요? <a href="{% url 'index' %}"> 회원 가입 하기</a></p>
+			</div>
+		</div>
+		<!-- copyright -->
+		<!-- //copyright -->
+		<ul class="w3lsg-bubbles">
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+		</ul>
+	</div>
+
+
+
+
+
 	{% include "modules/footer.html" %}
 {% endblock %}
