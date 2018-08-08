@@ -35,10 +35,14 @@ def home(request):
     my_user = request.user.myuser
     complete_post = Post.objects.all()
     complete_post = complete_post.order_by('date')
+    applications = Application.objects.filter(user=my_user)
+    applications = [application.post.id for application in applications]
+
     context = dict(
         current_user = my_user,
         username = request.user.username,
-        complete_post=complete_post
+        complete_post=complete_post,
+        applications = applications
     )
 
     return render(request,"home.html",context)
@@ -95,6 +99,7 @@ def lecture(request,id) :
 
 
     context = dict(
+        post = post,
         username=request.user.username,
         post_id = post.id,
         post_image = post.main_image,

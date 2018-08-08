@@ -26,8 +26,8 @@ doapply.on('click', function() {
             item.toggleClass("notapply");
             if (url=="/apply/"){item.text("강의 취소")} else {item.text("강의 신청")}
 
+            $(".artience-apply-main").text("수강신청수 : " + e.likes_count)
 
-            target.html(e.likes_count);
         }
     });
 });

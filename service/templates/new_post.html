@@ -22,8 +22,13 @@
      <label for="input_name" required> &nbsp; 최소 인원 : &nbsp;</label>
      <input type="text" class="form-control" id="input_name" placeholder="10" name="min">
      <label for="input_name" required> &nbsp; 강의일 : &nbsp;</label>
-     <div class="input-group date" >
-         <input type="text" class="form-control" name="startdate" required><span class="input-group-addon"><i class="glyphicon glyphicon-calendar"></i></span>
+
+
+     <div class="input-group date" id="datetimepicker1" data-target-input="nearest">
+         <input type="text" class="form-control datetimepicker-input" data-target="#datetimepicker1"/>
+         <div class="input-group-append" data-target="#datetimepicker1" data-toggle="datetimepicker">
+             <div class="input-group-text"><i class="fa fa-calendar"></i></div>
+         </div>
      </div>
     </div>
 
@@ -43,7 +48,7 @@
 </section>
 </div>
 <script type="text/javascript">
-$('.input-group.date').datetimepicker({
+$('.editdate').datetimepicker({
   format: "YYYY-MM-DD HH:00"
 
 }
@@ -52,6 +57,10 @@ $('.input-group.date').datetimepicker({
 
 
 </script>
-
+<script type="text/javascript">
+    $(function () {
+        $('#datetimepicker1').datetimepicker();
+    });
+</script>
 {% include "modules/footer.html" %}
 {% endblock %}
