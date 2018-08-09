@@ -175,9 +175,10 @@ def mail(request):
     type =request.POST['type']
     post = Post.objects.get(id=post_id)
     if (type=="강의 신청") :
-        email = EmailMessage('[Campus] Artience 사내 강의 신청 완료', post.title + " 강의가 신청 완료 되었습니다.", to=[request.user.email])
-    else :
         email = EmailMessage('[Campus] Artience 사내 강의 취소 완료', post.title + " 강의가 취소 완료 되었습니다.", to=[request.user.email])
+    else :
+        email = EmailMessage('[Campus] Artience 사내 강의 신청 완료', post.title + " 강의가 신청 완료 되었습니다.", to=[request.user.email])
+
     response=dict(message="success")
     email.send()
     return JsonResponse(response)
