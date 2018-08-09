@@ -10,7 +10,7 @@
   <div class="col-lg-4 col-sm-6 portfolio-item">
     <div class="card h-100">
             <a href="{% url 'lecture' post.id %}">
-            <img src="{% static '' %}{{ post.main_image }}" alt="picture" class="card-img-top" >
+            <img src="{{ post.main_image }}" alt="picture" class="card-img-top" >
     </a>
             <div class="card-body">
             <h5 class="card-title">
@@ -30,18 +30,4 @@
 
 
 
-
-  <!--  <section class="artience-card-comments">
-        {% for comment in post.comment_set.all %}
-     <p class="artience-card-comment">
-            <span class="artience-card-comment-user">{{ comment.user.user_django.username }}</span>
-            {{ comment.content }}
-        </p>
-        {% endfor %}
-    </section>
-    <span class="artience-card-time">{{ post }}</span>
-
-        {% csrf_token %}
-        <input name='comment' class="artience-card-input" placeholder="Agrega un comentario..."/>
-    </form>-->
 </section>

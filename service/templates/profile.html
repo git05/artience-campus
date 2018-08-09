@@ -5,9 +5,18 @@
 {% block maincontent %}
 	{% include "modules/navbar.html" %}
 <div class="container">
+  <div class="title">
+  <h6 class="my-4">이름 : {{name}}
+  </h6>
+ </title>
+ <div class="title">
+ <h6 class="my-4">수강 신청 수 : {{count}}
+ </h6>
+</title>
+
 	<div class="title">
-	<h4 class="my-4">강의 목록
-	</h4>
+	<h6 class="my-4">수강 신청 목록
+	</h6>
  </title>
             <div class="row">
             {% for post in complete_post %}

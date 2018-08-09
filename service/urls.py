@@ -14,5 +14,6 @@ urlpatterns= [
     path('loginuser/',views.login,name="validate"),
     path('lecture/<int:id>',views.lecture,name="lecture"),
     path('apply/',views.apply,name="apply"),
-    path('unapply/',views.unapply,name="unapply")
+    path('unapply/',views.unapply,name="unapply"),
+    path('mail/',views.mail,name="mail"),
 ]

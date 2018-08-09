@@ -34,3 +34,5 @@ body {
 .card-text:last-child {
     font-size: 13px;
 }
+
+body { overflow-x: hidden;}

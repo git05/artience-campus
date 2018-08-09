@@ -6,16 +6,19 @@
     {% include "modules/navbar.html" %}
 
 <div class="container">
+ <input type="hidden" name="userid" value="{{my_user.id}}">
+  <input type="hidden" name="postid" value="{{post_id}}">
+
+
     <main class="mt-5 pt-4">
         <div class="container dark-grey-text mt-5">
-
           <!--Grid row-->
           <div class="row wow fadeIn animated" style="visibility: visible; animation-name: fadeIn;">
 
             <!--Grid column-->
             <div class="col-md-6 mb-4 text-center">
 
-              <img src="{% static '' %}{{ post_image }}" class="img-responsive tocenter" alt="">
+              <img src="{{ post_image }}" class="img-responsive tocenter" alt="">
 
             </div>
             <!--Grid column-->
@@ -43,10 +46,10 @@
                   <!-- Default input -->
 
                   {% if post_id in applications %}
-                    <button type="button" class="btn btn-success notapply applyevent" postid={{post_id}} >강의 취소</button>
+                    <button type="button" class="btn btn-success notapply applyevent" data-toggle="modal" data-target="#basicModal" postid={{post_id}} >강의 취소</button>
                   </a>
                   {% else %}
-                    <button type="button" class="btn btn-primary apply applyevent" postid={{post_id}} >강의 신청</button>
+                    <button type="button" class="btn btn-primary apply applyevent" data-toggle="modal" data-target="#basicModal" postid={{post_id}} >강의 신청</button>
 
                   </a>
                   {% endif %}
@@ -90,5 +93,29 @@
         </div>
       </main>
 <div>
+
+
+  <div class="modal fade" id="basicModal" tabindex="-1" role="dialog" aria-labelledby="basicModal" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h4 class="modal-title" id="myModalLabel">수강신청</h4>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <h6>수강신청 하시겠습니까?</h6>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">취소</button>
+          <button type="button" class="btn btn-primary btn-apply" data-dismiss="modal">신청</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
 	{% include "modules/footer.html" %}
 {% endblock %}

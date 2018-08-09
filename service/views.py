@@ -4,6 +4,7 @@ from django.http import JsonResponse
 from django.views.decorators.csrf import csrf_exempt
 from django.core.files.storage import FileSystemStorage
 from django.contrib.auth.models import User
+from django.core.mail import EmailMessage
 import re
 
 
@@ -100,6 +101,7 @@ def lecture(request,id) :
 
     context = dict(
         post = post,
+        my_user = request.user.myuser,
         username=request.user.username,
         post_id = post.id,
         post_image = post.main_image,
@@ -119,6 +121,7 @@ def apply(request):
     post_id =request.POST['post_id']
     post = Post.objects.get(id=post_id)
     my_user = request.user.myuser
+
     data = dict(
         user = my_user,
         post = post
@@ -139,7 +142,46 @@ def unapply(request):
     like = Application.objects.get(**data)
     like.delete()
     response = dict(message="OK" , likes_count=post.application_set.count())
+#    email = EmailMessage('강의 취소 완료', 'body text', to=['yhkim@artience.co.kr'])
+    #email.send()
     return JsonResponse(response)
+
+def profile(request,username):
+    if not request.user.is_authenticated:
+        return redirect('index')
+    my_user = request.user.myuser
+    applications = Application.objects.filter(user=my_user)
+    count = applications.count()
+    complete_post = Post.objects.filter(application__user=request.user.myuser)
+    complete_post = complete_post.order_by('date')
+    applications = [application.post.id for application in applications]
+    name = request.user.first_name
+
+
+    context = dict(
+        current_user = my_user,
+        username = request.user.username,
+        complete_post=complete_post,
+        applications = applications,
+        name = name,
+        count = count
+    )
+
+    return render(request,"profile.html",context)
+
+@csrf_exempt
+def mail(request):
+    post_id =request.POST['post_id']
+    type =request.POST['type']
+    post = Post.objects.get(id=post_id)
+    if (type=="강의 신청") :
+        email = EmailMessage('[Campus] Artience 사내 강의 신청 완료', post.title + " 강의가 신청 완료 되었습니다.", to=[request.user.email])
+    else :
+        email = EmailMessage('[Campus] Artience 사내 강의 취소 완료', post.title + " 강의가 취소 완료 되었습니다.", to=[request.user.email])
+    response=dict(message="success")
+    email.send()
+    return JsonResponse(response)
+
 
 
 # Create your views here.
