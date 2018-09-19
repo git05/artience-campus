@@ -22,7 +22,7 @@
   <div class ="artience-date">강의 일자 : {{post.lecture_date}}</div>
   <div class ="artience-min">최소인원 : {{post.min}}</div>
   <div class ="artience-min">수강신청수 : {{ post.application_set.count }}</div>
-  <p class="card-text">{% autoescape off %}{{ post.description|truncatechars:100|striptags }}{% endautoescape %}</p>
+  <p class="card-text">{% autoescape off %}{{ post.description2|truncatechars:100|striptags }}{% endautoescape %}</p>
 
   </div>
 </div>

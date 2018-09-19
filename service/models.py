@@ -13,7 +13,8 @@ class MyUser(models.Model):
 
 class Post(models.Model):
     title = models.CharField(null=True,max_length=200)
-    description = models.CharField(null=True,max_length=200)
+    description = models.TextField(null=True,max_length=3000)
+    description2 = models.CharField(null=True,max_length=200)
     date = models.DateTimeField(default=datetime.now())
     user = models.ForeignKey(MyUser, on_delete=models.CASCADE)
     main_image= models.CharField(null=True,max_length=200)
